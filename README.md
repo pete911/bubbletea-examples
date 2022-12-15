@@ -1,2 +1,3 @@
 # bubbletea-examples
-simple bubbletea example app
+
+Simple demo application that gets response codes from google.com.
