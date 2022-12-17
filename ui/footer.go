@@ -17,5 +17,6 @@ func NewFooter(content string) Footer {
 }
 
 func (f Footer) View(width int) string {
+	width = width - f.style.GetHorizontalFrameSize()
 	return f.style.Width(width).Render(f.content)
 }
