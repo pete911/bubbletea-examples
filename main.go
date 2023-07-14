@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	if err := tea.NewProgram(ui.NewModel()).Start(); err != nil {
+	if _, err := tea.NewProgram(ui.NewModel()).Run(); err != nil {
 		fmt.Println("Error running program:", err)
 		os.Exit(1)
 	}
